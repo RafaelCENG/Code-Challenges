@@ -36,6 +36,7 @@ function makeNegative(num) {
     return num
   }
 
+
 //kyu 8:
 //Instructions We need a function that can transform a number into a string.
 
@@ -43,3 +44,34 @@ function makeNegative(num) {
 function numberToString(num) {
     return num.toString()
   }
+
+
+//kyu 8:
+//Convert boolean values to strings 'Yes' or 'No'.
+
+//code:
+function boolToWord( bool ){
+  return bool ? 'Yes' : 'No'
+}
+
+
+//kyu 8:
+//Remove First and Last Character
+
+//code:
+function removeChar(str){
+  str = str.slice(1,-1)
+   return str
+ };
+ 
+ 
+//kyu 8:
+//Find the smallest integer in the array
+
+//code:
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min(...args)
+  }
+}
+ 
