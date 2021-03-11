@@ -82,3 +82,20 @@ function past(h, m, s){
     //#Happy Coding! ^_^
     return   h * 3600000 + m * 60000 + s * 1000
   }
+
+
+//kyu: 8
+//title : Returning Strings
+
+//code
+function greet(name){
+  return `Hello, ${name} how are you doing today?`
+}
+
+//kyu: 8
+//title : Sum Arrays
+
+//code
+function sum (numbers) {
+  return numbers.reduce((acc,curr) => acc + curr,0) 
+};
