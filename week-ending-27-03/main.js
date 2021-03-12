@@ -99,3 +99,11 @@ function greet(name){
 function sum (numbers) {
   return numbers.reduce((acc,curr) => acc + curr,0) 
 };
+
+//kyu: 8
+//title : Convert a Boolean to a String
+
+//code
+function booleanToString(b){
+  return b.toString()
+}
