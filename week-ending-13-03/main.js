@@ -99,3 +99,37 @@ function getMiddle(s)
   else
     return s.charAt(Math.ceil(s.length/2-1))
 }
+
+//kyu 8:
+//Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
+
+
+//code:
+var summation = function (num) {
+  let sum = 0;
+  for(let i = 1; i <= num; i++){
+    sum += i
+  }
+  return sum
+}
+
+//kyu 8:
+//Simple, remove the spaces from the string, then return the resultant string.
+
+//code:
+function noSpace(x){
+  return x.replace(/\s+/g,'')   //function noSpace(x){return x.split(' ').join('')}
+}
+
+//kyu 7:
+//Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
+
+//code:
+function squareDigits(num){
+  let digit = num.toString().split('')
+  let numArr = []
+  numArr = digit.map(x => Math.pow(x,2))        //function squareDigits(num){           
+  let squaredNum=numArr.join('')               //return Number(('' + num).split('').map(function (val) { return val * val;}).join(''));
+  return +squaredNum                          //}
+}
+
