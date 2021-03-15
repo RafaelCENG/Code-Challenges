@@ -107,3 +107,11 @@ function sum (numbers) {
 function booleanToString(b){
   return b.toString()
 }
+
+//kyu: 8
+//title : Reversed Words
+
+//code
+function reverseWords(str){
+  return str.split(' ').reverse().join(' ') // reverse those words
+}
