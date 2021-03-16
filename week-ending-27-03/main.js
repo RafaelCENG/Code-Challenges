@@ -115,3 +115,14 @@ function booleanToString(b){
 function reverseWords(str){
   return str.split(' ').reverse().join(' ') // reverse those words
 }
+
+
+//kyu: 8
+//title : Array plus array
+
+//code
+function arrayPlusArray(arr1, arr2) {
+  let reducer1 = arr1.reduce((acc,curr) => acc + curr,0)
+  let reducer2 = arr2.reduce((acc,curr) => acc + curr,0)
+  return reducer1 + reducer2
+}
