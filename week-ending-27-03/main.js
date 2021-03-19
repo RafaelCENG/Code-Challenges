@@ -126,3 +126,12 @@ function arrayPlusArray(arr1, arr2) {
   let reducer2 = arr2.reduce((acc,curr) => acc + curr,0)
   return reducer1 + reducer2
 }
+
+
+//kyu: 8
+//title : Do I get a bonus?
+
+//code
+function bonusTime(salary, bonus) {
+  return  (bonus ? "\u00A3"+salary*10 : "\u00A3"+salary)
+}
