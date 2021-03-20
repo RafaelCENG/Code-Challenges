@@ -174,3 +174,92 @@ function accum(s) {
   })
   return  str.join('-').toString()
 }
+
+//kyu: 8
+//Instructions: Convert number to reversed array of digits
+
+
+//code
+function digitize(n) {
+  return n.toString().split("").reverse().map(i => Number(i))
+}
+
+
+//kyu: 8
+//Instructions: Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
+
+
+//code
+function invert(array) {
+  return array.map(i => -i)
+}
+
+
+//kyu: 8
+//Instructions: Jenny has written a function that returns a greeting for a user.
+//  However, she's in love with Johnny, and would like to greet him slightly different. She added a special case to her function, but she made a mistake.
+
+
+//code
+function greet(name){
+  if(name === "Johnny")
+    return "Hello, my love!";
+  else
+    return "Hello, " + name + "!";
+}
+
+//kyu: 7
+//Instructions: Simple, given a string of words, return the length of the shortest word(s).
+//String will never be empty and you do not need to account for different data types.
+
+
+//code
+function findShort(s){
+  let arr = s.split(" ")
+  arr.forEach((element,i) =>{
+    arr[i] = element.length
+  })
+  return Math.min(...arr)
+}
+
+//kyu: 7
+//Instructions: Check to see if a string has the same amount of 'x's and 'o's.
+//The method must return a boolean and be case insensitive. The string can contain any char.
+
+
+//code
+function XO(str) {
+  let arr = str.split("")
+  let countX = 0;
+  let countO = 0;
+  for(let i = 0; i <arr.length; i++){
+    if(arr[i].toLowerCase() === 'x' ){
+      countX++
+    }
+    else if(arr[i].toLowerCase() === 'o'){
+      countO++
+    }
+  }
+  if(countX === countO || (countX === 0 && countO === 0)){
+    return true
+  }
+  else{
+    return false
+  }
+}
+
+//kyu: 7
+//Instructions: Your task is to convert strings to how they would be written by Jaden Smith.
+//The strings are actual quotes from Jaden Smith, but they are not capitalized in the same way he originally typed them.
+
+
+//code
+String.prototype.toJadenCase = function () {
+  var str = this
+  str = str.split(' ')
+  for (let i = 0; i < str.length; i++){
+    str[i] = str[i][0].toUpperCase() + str[i].substr(1)
+      }
+  str = str.join(" ")
+  return str
+};
