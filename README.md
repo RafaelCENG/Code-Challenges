@@ -1,2 +1,2 @@
 # Codewars
-Every codewar i do!!!
+Completed Katas
