@@ -152,3 +152,59 @@ function fakeBin(x){
   }
   return arr.join('')
 }
+
+
+//kyu: 8
+//title : Are You Playing Banjo?
+
+//code
+function areYouPlayingBanjo(name) {
+  let char = name.charAt(0)
+  if(char.toLowerCase() === 'r' || char.toUpperCase() === 'R'){
+    return name + " plays banjo"
+  }
+  else{
+    return name + " does not play banjo"
+  }
+}
+
+//kyu: 8
+//title : Calculate average 
+
+//code
+function find_average(array) {
+  let arr = array.reduce((acc,curr) => acc + curr,0)
+  return arr/array.length
+}
+
+//kyu: 7
+//title : Complementary DNA
+
+//code
+function DNAStrand(dna){
+  let arr = dna.split('')
+  console.log(arr)
+  for(let i = 0; i<arr.length; i++){
+    if (arr[i] === 'A'){
+      arr[i] = 'T'
+    }
+    else if(arr[i] === 'T'){
+      arr[i] = 'A'
+    }
+    else if(arr[i] === 'G'){
+      arr[i] = 'C'
+    }
+    else if(arr[i] === 'C'){
+      arr[i] = 'G'
+    }
+  }
+  return arr.join('')
+}
+
+//kyu: 7
+//title : List Filtering
+
+//code
+function filter_list(l) {
+  return l.filter(n => n >= 0 && typeof n != "string")
+}
