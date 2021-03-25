@@ -208,3 +208,19 @@ function DNAStrand(dna){
 function filter_list(l) {
   return l.filter(n => n >= 0 && typeof n != "string")
 }
+
+
+
+//kyu: 8
+//title : Find Maximum and Minimum Values of a List
+
+//code
+var min = function(list){
+  list[0] = Math.min(...list)
+  return list[0];
+}
+
+var max = function(list){
+  list[0] = Math.max(...list)
+  return list[0];
+}
