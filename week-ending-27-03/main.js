@@ -224,3 +224,142 @@ var max = function(list){
   list[0] = Math.max(...list)
   return list[0];
 }
+
+
+
+//kyu: 8
+//title : Reversed sequence 
+
+//code
+const reverseSeq = n => {
+  let arr = []
+  for(let i = 1; i <= n; i++){
+    arr.push(i)
+  }
+  return arr.reverse();
+};
+
+
+//kyu: 8
+//title : DNA to RNA Conversion
+
+//code
+function DNAtoRNA(dna) {
+  let rna = dna.split('')
+  for(let i = 0; i < rna.length; i++){      // return dna.replace(/T/g, 'U');
+   if(rna[i] === 'T'){
+      rna[i] = 'U'
+   }
+  }
+  return rna.join('')
+}
+
+//kyu: 8
+//title : Beginner - Reduce but Grow
+
+//code
+function grow(x){
+  return x.reduce((acc,curr) => acc * curr)
+}
+
+//kyu: 8
+//title : You only need one - Beginner
+
+//code
+function check(a, x) {
+  return a.includes(x)
+}
+
+//kyu: 8
+//title : Get Planet Name By ID
+
+//code
+function getPlanetName(id){
+  var name;
+  switch(id){
+    case 1:
+      name = 'Mercury'
+      break;
+    case 2:
+      name = 'Venus'
+      break;
+    case 3:
+      name = 'Earth'
+      break;
+    case 4:
+      name = 'Mars'
+      break;
+    case 5:
+      name = 'Jupiter'
+      break;
+    case 6:
+      name = 'Saturn'
+      break;
+    case 7:
+      name = 'Uranus'
+      break;
+    case 8:
+      name = 'Neptune'
+      break;
+  }
+  return name;
+}
+
+
+//kyu: 8
+//title : Beginner Series #1 School Paperwork
+
+//code
+function paperwork(n, m) {
+  if(n > 0 && m > 0){
+    return n*m
+  }
+  else{
+    return 0;
+  }
+}
+
+//kyu: 8
+//title : MakeUpperCase
+
+//code
+function makeUpperCase(str) {
+  return str.toUpperCase()
+}
+
+
+//kyu: 8
+//title : Sum without highest and lowest number
+
+//code
+function sumArray(array) {
+  if(array === null){
+    return 0
+  }
+  else
+  {
+      array.sort((a,b) => a-b)
+      let sum = 0;
+      for(let i = 1; i<array.length-1; i++){
+          sum += array[i]
+      }
+      return sum
+  }
+} 
+
+
+//kyu: 8
+//title : Transportation on vacation 
+
+//code
+function rentalCarCost(d) {
+  if(d >= 7){
+    return d*40-50
+  }
+  else if(d >= 3){
+    return d*40 - 20
+  }
+  else{
+    return d * 40
+  }
+}
