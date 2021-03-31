@@ -116,3 +116,87 @@ function stringToArray(string){
 function greet (name, owner) {
   return name === owner ? 'Hello boss' : 'Hello guest'
 }
+
+// kyu 8:
+// Title: Total amount of points
+
+//code:
+function points(games) {
+  let splitGames = []
+  for(let i = 0; i < games.length; i++){
+    splitGames[i] = games[i].split(':')
+  }
+  let gamePoints = 0;
+  for(let i = 0; i < splitGames.length; i++){
+    if(splitGames[i][0] > splitGames[i][1]){
+      gamePoints += 3
+    }
+    else if(splitGames[i][0] === splitGames[i][1]){
+      gamePoints += 1
+    }
+    else{
+      gamePoints += 0
+    }
+  }
+  return gamePoints
+}
+
+
+// kyu 8:
+// Title: Beginner Series #4 Cockroach
+
+//code:
+function cockroachSpeed(s) {
+  return Math.floor(s*27.7777778) 
+}
+
+// kyu 8:
+// Title: Simple multiplication
+
+//code:
+function simpleMultiplication(number) {
+  return number % 2 === 0 ? number*8 : number*9
+}
+
+
+// kyu 8:
+// Title: Expressions Matter 
+
+//code:
+function expressionMatter(a, b, c) {
+  return Math.max(
+    a + b + c,
+    a * b * c,
+    a * (b + c),
+    (a + b) * c,
+    a + b * c,
+    a * b + c,
+  );
+}
+
+
+// kyu 8:
+// Title: Third Angle of a Triangle
+
+//code:
+function otherAngle(a, b) {
+  return 180-a-b
+}
+
+// kyu 8:
+// Title: Grasshopper - Messi goals function
+
+//code:
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals
+}
+
+// kyu 8:
+// Title: Grasshopper - Messi Goals
+
+//code:
+var laLigaGoals = 43
+var championsLeagueGoals = 10
+var copaDelReyGoals = 5
+
+var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals
