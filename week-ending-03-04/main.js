@@ -200,3 +200,81 @@ var championsLeagueGoals = 10
 var copaDelReyGoals = 5
 
 var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals
+
+// kyu 8:
+// Title: Expressions Matter 
+
+//code:
+function expressionMatter(a, b, c) {
+  return Math.max(
+    a*b*c,(a*b)+c,a*(b+c),a+b+c,(a+b)*c)
+}
+
+// kyu 8:
+// Title: altERnaTIng cAsE <=> ALTerNAtiNG CaSe
+
+//code:
+String.prototype.toAlternatingCase = function () {
+  return this.split('').
+              map(x => x === x.toUpperCase() ?  x.toLowerCase() : x.toUpperCase()).
+              join('')
+}
+
+// kyu 8:
+// Title: Rock Paper Scissors!
+
+//code:
+const rps = (p1, p2) => {
+  if(p1 === 'rock' && p2 === 'scissors' || p1 === 'scissors' && p2 === 'paper' || p1 ==='paper' && p2 === 'rock'){
+    return `Player 1 won!`
+  }
+  else if(p1 === p2){
+    return 'Draw!'
+  }
+  else{
+    return `Player 2 won!`
+  }
+};
+
+
+// kyu 8:
+// Title: Short Long Short
+
+//code:
+function solution(a, b){
+  return a.length > b.length ? b+a+b : a+b+a
+}
+
+// kyu 8:
+// Title: Welcome!
+
+//code:
+function greet(language) {
+  let languages = {
+        "english": 'Welcome',
+        "czech": 'Vitejte',
+        "danish": 'Velkomst',
+        "dutch": 'Welkom',
+        "estonian": 'Tere tulemast',
+        "finnish": 'Tervetuloa',
+        "flemish": 'Welgekomen',
+        "french": 'Bienvenue',
+        "german": 'Willkommen',
+        "irish": 'Failte',
+        "italian": 'Benvenuto',
+        "latvian": 'Gaidits',
+        "lithuanian": 'Laukiamas',
+        "polish": 'Witamy',
+        "spanish": 'Bienvenido',
+        "swedish": 'Valkommen',
+        "welsh": 'Croeso'
+        };
+        if( languages[language])
+        {
+             return languages[language];
+        }
+        else
+        {
+          return "Welcome"
+        }
+  }
