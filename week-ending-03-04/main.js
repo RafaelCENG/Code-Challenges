@@ -278,3 +278,12 @@ function greet(language) {
           return "Welcome"
         }
   }
+
+  
+// kyu 8:
+// Title: Will there be enough space?
+
+//code:
+function enough(cap, on, wait) {
+  return cap >= (on + wait) ? 0 : Math.abs(on-cap+wait)
+}
