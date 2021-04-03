@@ -287,3 +287,12 @@ function greet(language) {
 function enough(cap, on, wait) {
   return cap >= (on + wait) ? 0 : Math.abs(on-cap+wait)
 }
+
+
+// kyu 8:
+// Title: Can we divide it?
+
+//code:
+function isDivideBy(number, a, b) {
+  return (number % a === 0 && number % b === 0) ? true : false
+}
