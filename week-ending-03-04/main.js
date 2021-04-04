@@ -296,3 +296,11 @@ function enough(cap, on, wait) {
 function isDivideBy(number, a, b) {
   return (number % a === 0 && number % b === 0) ? true : false
 }
+
+// kyu 8:
+// Title: My head is at the wrong end!
+
+//code:
+function fixTheMeerkat(arr) {
+  return arr.reverse()
+ }
