@@ -90,3 +90,60 @@ function removeEveryOther(arr){
   }
   return newArr
 }
+
+
+// kyu 8:
+// Title: Parse nice int from char problem
+
+//code:
+function getAge(inputString){
+  let arr = inputString.split(' ')
+  return Number(arr[0])
+}
+
+// kyu 8:
+// Title: Count Odd Numbers below n
+
+//code:
+function oddCount(n){
+  return n % 2 === 0 ? n/2 : (n-1)/2
+}
+
+// kyu 8:
+// Title: The Feast of Many Beasts
+
+//code:
+function feast(beast, dish) {
+  return beast[0] === dish[0] && beast[beast.length-1] === dish[dish.length-1] ? true : false
+ }
+
+// kyu 8:
+// Title: Stringy Strings
+
+//code:
+function stringy(size) {
+  if (size > 1 && size % 2 === 0){
+    return '10'.repeat(size/2)
+  }
+  else if(size > 1 && size % 2 === 1){
+    return '10'.repeat(size/2) + '1'
+  }
+  else{
+    return '1'
+  }
+}
+
+// kyu 8:
+// Title: Number toString
+
+//code:
+var a = '123'.toString();
+
+
+// kyu 8:
+// Title: Watermelon
+
+//code:
+function divide(weight){
+  return weight > 2 ? weight % 2 === 0 ? true : false : false
+}
