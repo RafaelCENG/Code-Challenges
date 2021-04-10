@@ -147,3 +147,85 @@ var a = '123'.toString();
 function divide(weight){
   return weight > 2 ? weight % 2 === 0 ? true : false : false
 }
+
+// kyu 8:
+// Title: Switch it Up!
+
+//code:
+function switchItUp(number){
+  let numbers = {
+    0 : 'Zero',
+    1 : 'One',
+    2 : 'Two',
+    3 : 'Three',
+    4 : 'Four',
+    5 : 'Five',
+    6 : 'Six',
+    7 : 'Seven',
+    8 : 'Eight',
+    9 : 'Nine'
+  }
+      return numbers[number];
+ }
+
+// kyu 8:
+// Title: Is it even?
+
+//code:
+function testEven(n) {
+  return n % 2 === 0 ? true : false
+}
+
+// kyu 8:
+// Title: Quarter of the year
+
+//code:
+const quarterOf = (month) => {
+  return month > 3 ? Math.ceil(month/3) : 1
+}
+
+// kyu 8:
+// Title: Grasshopper - Debug sayHello
+
+//code:
+function sayHello(name) {
+  return 'Hello, ' + name
+}
+
+// kyu 8:
+// Title: Correct the mistakes of the character recognition software
+
+//code:
+function correct(string)
+{
+  let arr = string.split('')
+	for(let i = 0; i < arr.length; i++){
+    if (arr[i] === '5'){
+      arr[i] = 'S'
+    }
+    else if(arr[i] == '0'){
+     arr[i] = 'O'
+    }
+    else if(arr[i] == '1'){
+     arr[i] = 'I'
+    }
+  }
+  return arr.join('')
+}
+
+// kyu 8:
+// Title: I love you, a little , a lot, passionately ... not at all
+
+//code:
+const phrases = [
+  'I love you',
+  'a little',
+  'a lot',
+  'passionately',
+  'madly',
+  'not at all',
+]
+
+function howMuchILoveYou(n) {
+   return phrases[(n - 1) % phrases.length] 
+}
