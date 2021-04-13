@@ -81,3 +81,77 @@ function xor(a, b) {
 var Ball = function(ballType) {
     return this.ballType = ballType || 'regular'
 };
+
+// kyu 8:
+// Title: Area or Perimeter
+
+//code:
+const areaOrPerimeter = function(l , w) {
+  return l === w ? l*w : (l+w)*2
+};
+
+// kyu 8:
+// Title: Filling an array (part 1)
+
+//code:
+function arr(n){
+  var newArr = [];
+  for(var i = 0; i < n; i++){ //const arr = n => Array.from({length: n}, (_, i) => i);
+    newArr.push(i);
+  }
+  return newArr;
+}
+
+
+// kyu 8:
+// Title: How many lightsabers do you own?
+
+//code:
+function howManyLightsabersDoYouOwn(name) {
+  return name === 'Zach' ? 18 : 0
+}
+
+// kyu 8:
+// Title: Grasshopper - If/else syntax debug
+
+//code:
+function checkAlive (health) {
+  if (health <= 0) {
+    return false
+  } else {
+    return true
+  }
+}
+
+
+// kyu 8:
+// Title: Sort and Star
+
+//code:
+function twoSort(s) {
+  s.sort()
+  let str = []
+  for(let i = 0; i < s[0].length; i++){
+    str.push(s[0][i]+"***")
+  }
+  str.pop()
+  str.push(s[0][s[0].length-1])    ///return s.sort()[0].split('').join('***');
+  console.log(str)
+  return str.join('')
+}
+
+// kyu 8:
+// Title: Filter out the geese
+
+//code:
+function gooseFilter (birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  let arr = []
+  for(let i = 0; i < birds.length; i++){
+    if(geese.includes(birds[i])){}        //  return birds.filter(b => !geese.includes(b));
+    else{
+        arr.push(birds[i])
+    }
+  }
+  return arr
+};
