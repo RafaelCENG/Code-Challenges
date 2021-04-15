@@ -155,3 +155,79 @@ function gooseFilter (birds) {
   }
   return arr
 };
+
+
+// kyu 8:
+// Title: Thinkful - Logic Drills: Traffic light
+
+//code:
+function updateLight(current) {
+  return current === 'green' ? 'yellow' : current === 'yellow' ? 'red' : 'green'
+}
+
+// kyu 8:
+// Title: Grasshopper - Terminal game move function
+
+//code:
+function move (position, roll) {
+  return position + roll*2
+}
+
+
+// kyu 8:
+// Title: Get Nth Even Number
+
+//code:
+function nthEven(n){
+  return (n-1) * 2
+}
+
+
+// kyu 8:
+// Title: Generate range of integers
+
+//code:
+function generateRange(min, max, step){
+  let arr = []
+  let i = min;
+  while(min <= max){
+    arr.push(i)
+    min = min + step
+    i = min
+  }
+  return arr
+}
+
+// kyu 8:
+// Title: Palindrome Strings
+
+//code:
+function isPalindrome(line) {
+  let linePal = line.toString().split('').reverse().join("")
+  return String(line) === linePal ? true : false
+}
+
+// kyu 8:
+// Title: Dollars and Cents
+
+//code:
+function formatMoney(amount){
+  return "$"+`${amount.toFixed(2)}`
+}
+
+// kyu 8:
+// Title: Simple Fun #1: Seats in Theater
+
+//code:
+function seatsInTheater(nCols, nRows, col, row) {
+  return (nCols-col+1) * (nRows - row)
+}
+
+// kyu 8:
+// Title: get character from ASCII Value
+
+//code:
+function getChar(c){
+  let str = String.fromCharCode(c)
+  return str
+}
