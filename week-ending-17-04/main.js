@@ -256,3 +256,67 @@ function convertToCelsius (temperature) {
   var celsius = (temperature -32 ) * (5/9)
   return celsius
 }
+
+// kyu 8:
+// Title: Twice as old
+
+//code:
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return dadYearsOld/2 >= sonYearsOld ? dadYearsOld - sonYearsOld*2 : sonYearsOld*2 - dadYearsOld
+}
+
+// kyu 8:
+// Title: Grasshopper - Check for factor
+
+//code:
+function checkForFactor (base, factor) {
+  return base % factor === 0 ? true : false
+}
+
+// kyu 8:
+// Title: Remove duplicates from list
+
+//code:
+function distinct(a) {
+  return [...new Set(a)];
+}
+
+// kyu 8:
+// Title: Surface Area and Volume of a Box
+
+//code:
+function getSize(width, height, depth){
+  let arr = []
+  arr.push(2 * (height * width) + 2 * (height * depth) + 2 * (width * depth) )
+  arr.push(width * height * depth)
+  return arr
+}
+
+
+// kyu 8:
+// Title: Hello, Name or World!
+
+//code:
+function hello(name) {
+  if(name != null && name != ""){
+     name = name.toLowerCase()
+     name = name.charAt(0).toUpperCase() + name.slice(1)
+     return `Hello, ${name}!`
+  } else {
+    return 'Hello, World!'
+  }
+}
+
+// kyu 8:
+// Title: Is this my tail?
+
+//code:
+function correctTail(body, tail){
+  let sub = body.substring(body.length-tail.length)
+  if (sub === tail){
+    return true
+  }
+  else {
+        return false
+  } 
+}
