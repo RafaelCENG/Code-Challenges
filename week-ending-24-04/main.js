@@ -109,3 +109,56 @@ function validateUsr(username) {
   let res =  /^[0-9a-z_]{4,16}$/.test(username) 
   return res
 }
+
+// kyu 8:
+// Title: Capitalization and Mutability
+
+//code:
+function capitalizeWord(word) {
+  return  word[0].toUpperCase()+word.slice(1)
+}
+
+// kyu 8:
+// Title: L1: Bartender, drinks!
+
+//code:
+function getDrinkByProfession(param){
+  let strObj = {
+        "Jabroni" :	"Patron Tequila",
+        "School Counselor" :	"Anything with Alcohol",
+        "Programmer" :	"Hipster Craft Beer",
+        "Bike Gang Member" :	"Moonshine",
+        "Politician" :	"Your tax dollars",
+        "Rapper" :	"Cristal"
+   }
+  let arr = param.split(' ')
+  for(let i = 0; i < arr.length; i++){
+    arr[i] = arr[i][0].toUpperCase() + arr[i].slice(1).toLowerCase()
+  }
+  let word = arr.join(' ')
+      return strObj[word] ? strObj[word] : 'Beer'
+}
+
+// kyu 8:
+// Title: The Wide-Mouthed frog!
+
+//code:
+function mouthSize(animal) {
+  return animal.toLowerCase() === 'alligator' ? 'small' : 'wide'
+}
+
+// kyu 8:
+// Title: noobCode 01: SUPERSIZE ME.... or rather, this integer!
+
+//code:
+function superSize(num){
+  return Number(num.toString().split('').sort().reverse().join(''))
+}
+
+// kyu 8:
+// Title: Reversing Words in a String
+
+//code:
+function reverse(string){
+  return string.split(' ').reverse().join(' ')
+}
