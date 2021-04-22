@@ -162,3 +162,56 @@ function superSize(num){
 function reverse(string){
   return string.split(' ').reverse().join(' ')
 }
+
+// kyu 8:
+// Title: Student's Final Grade
+
+//code:
+function finalGrade (exam, projects) {
+  // if statements output = exam or projects for 100 , exam and project for 90,75 else 0
+  return exam > 90 || projects > 10 ? 100 :
+  exam > 75 && projects >= 5 ? 90 :
+  exam > 50 && projects >= 2 ? 75 : 0
+}
+
+// kyu 8:
+// Title: Cat years, Dog years
+
+//code:
+var humanYearsCatYearsDogYears = function(humanYears) {
+  //cat years 1 = 15 , 2 = 24 , n = 24 + 4*(n-2)
+  //dog years 1 = 15 , 2 = 24 , n = 24 + 5*(n-2)
+  let catYears = humanYears < 2 ? 15 : humanYears < 3 ? 24 : 24 + 4*(humanYears-2)
+  let dogYears = humanYears < 2 ? 15 : humanYears < 3 ? 24 : 24 + 5*(humanYears-2)
+  return [humanYears,catYears,dogYears]
+}
+
+// kyu 8:
+// Title: Plural
+
+//code:
+function plural(n) {
+  return n!==1
+}
+
+// kyu 8:
+// Title: Swap Values
+
+//code:
+function swapValues(arr) {
+  var args = arr
+  console.log(args)
+  var temp = args[0];
+  args[0] = args[1];
+  args[1] = temp;
+}
+
+// kyu 8:
+// Title: Training JS #1: create your first JS function and print "Helloworld!"
+
+//code:
+function helloWorld(){
+  var str = "Hello World!"
+  console.log(str)
+  return str
+}
