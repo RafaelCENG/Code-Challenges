@@ -215,3 +215,17 @@ function helloWorld(){
   console.log(str)
   return str
 }
+
+// kyu 8:
+// Title: Lario and Muigi Pipe Problem
+
+//code:
+function pipeFix(numbers){
+  let firstNumber = numbers[0]
+  let lastNumber = numbers[numbers.length-1]
+  let arr =[]
+  for (let i = firstNumber; i <= lastNumber; i++){
+    arr.push(i)
+  }
+  return arr
+}
