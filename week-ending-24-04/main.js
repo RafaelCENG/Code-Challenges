@@ -229,3 +229,11 @@ function pipeFix(numbers){
   }
   return arr
 }
+
+// kyu 8:
+// Title: Grasshopper - Terminal game combat function
+
+//code:
+function combat(health, damage) {
+  return health-damage > 0 ? health-damage : 0
+}
