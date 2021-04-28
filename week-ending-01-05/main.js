@@ -51,3 +51,53 @@ function between(a, b) {
 // add the value "codewars" to the websites array 1,000 times
 let websites = []
 websites = Array(1000).fill('codewars')
+
+
+// kyu 8:
+// Title: Convert to Binary
+
+//code:
+function toBinary(n){
+    let arr = []
+    while (n > 0) {
+      if(n % 2 === 0){
+        arr.push(0)
+      }
+      else{
+        arr.push(1)
+      }
+      n = Math.floor(n / 2)
+    }
+    return Number(arr.reverse().join(""))
+}
+
+
+// kyu 8:
+// Title: Sum The Strings
+
+//code:
+function sumStr(a,b) {
+    return (Number(a) + Number(b)).toString()
+}
+
+
+// kyu 8:
+// Title: Exclamation marks series #1: Remove a exclamation mark from the end of string
+
+//code:
+function remove(s){ 
+    s = s.split('')
+    if(s[s.length-1] === '!'){
+      s.pop(s.length-1)
+    }
+    return s.join('')
+}
+
+
+// kyu 8:
+// Title: Thinkful - Number Drills: Pixelart planning
+
+//code:
+function isDivisible(wallLength, pixelSize){
+    return wallLength % pixelSize === 0 ? true : false
+}
