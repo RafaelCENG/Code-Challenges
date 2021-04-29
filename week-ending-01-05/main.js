@@ -101,3 +101,12 @@ function remove(s){
 function isDivisible(wallLength, pixelSize){
     return wallLength % pixelSize === 0 ? true : false
 }
+
+// kyu 8:
+// Title: Grasshopper - Basic Function Fixer
+
+//code:
+function addFive(num) {
+  var total = num + 5
+  return total
+}
