@@ -110,3 +110,16 @@ function addFive(num) {
   var total = num + 5
   return total
 }
+
+// kyu 8:
+// Title: Super Duper Easy
+
+//code:
+function problem(x){
+  if(typeof x === 'number'){
+    return x*50+6
+  }
+  else{
+    return 'Error'
+  }
+}
