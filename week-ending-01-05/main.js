@@ -123,3 +123,16 @@ function problem(x){
     return 'Error'
   }
 }
+
+
+// kyu 8:
+// Title: Powers of 2
+
+//code:
+function powersOfTwo(n){
+  let arr = []
+  for(let i = 0; i <= n; i++){
+    arr.push(Math.pow(2,i))
+  }
+  return arr
+}
