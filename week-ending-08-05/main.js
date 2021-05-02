@@ -42,4 +42,4 @@ function arrayMadness(a, b) {
       cubes = Math.pow(b[i],3) + cubes
     }
     return squares > cubes ? true : false
-}
+ }
