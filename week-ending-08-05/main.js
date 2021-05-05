@@ -17,3 +17,12 @@ function tripleTrouble(one, two, three){
 function saleHotdogs(n){
     return  n < 5 ? n*100 : n >= 5 && n < 10 ? n*95 : n*90
 }
+
+
+// kyu 8:
+// Title: Welcome to the City
+
+//code:
+function sayHello( name, city, state ) {
+    return "Hello, " + name.join(" ") + "! Welcome to " + city + ", " + state +"!"
+}
