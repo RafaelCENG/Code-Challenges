@@ -26,3 +26,20 @@ function saleHotdogs(n){
 function sayHello( name, city, state ) {
     return "Hello, " + name.join(" ") + "! Welcome to " + city + ", " + state +"!"
 }
+
+
+// kyu 8:
+// Title: SpeedCode #2 - Array Madness
+
+//code:
+function arrayMadness(a, b) {
+    let squares = 0;
+    let cubes = 0;
+    for(let i = 0; i<a.length; i++){
+      squares = Math.pow(a[i],2) + squares
+    }
+    for(let i = 0; i<b.length; i++){
+      cubes = Math.pow(b[i],3) + cubes
+    }
+    return squares > cubes ? true : false
+}
