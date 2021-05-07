@@ -43,3 +43,12 @@ function arrayMadness(a, b) {
     }
     return squares > cubes ? true : false
  }
+
+ // kyu 8:
+// Title: Grasshopper - Variable Assignment Debug
+
+//code:
+var a = "dev"
+var b = "Lab"
+
+var name = a + b
