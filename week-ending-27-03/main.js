@@ -415,3 +415,12 @@ function countBy(x, n) {
   }
   return z;
 }
+
+
+//kyu: 8
+//title : Grasshopper - Function syntax debugging
+
+//code
+function main (verb, noun){
+  return verb + noun
+}
