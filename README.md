@@ -1,3 +1,3 @@
 # Code-Challenges
 
-Code Challenges for various Websites
+Code Challenges from various Websites
